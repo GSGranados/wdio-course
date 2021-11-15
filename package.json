@@ -1,0 +1,30 @@
+{
+  "name": "wdio-course",
+  "version": "1.0.0",
+  "description": "wdio end to end testing project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "wdio",
+    "cucumber",
+    "e2e",
+    "automation"
+  ],
+  "author": "Steven Granados (GSGranados)",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/chai": "^4.2.22",
+    "@wdio/allure-reporter": "^7.16.6",
+    "@wdio/cli": "^7.16.7",
+    "@wdio/cucumber-framework": "^7.16.6",
+    "@wdio/local-runner": "^7.16.7",
+    "@wdio/spec-reporter": "^7.16.4",
+    "chai": "^4.3.4",
+    "chromedriver": "^95.0.0",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.4.4",
+    "wdio-chromedriver-service": "^7.2.2"
+  }
+}

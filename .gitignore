@@ -1,0 +1,10 @@
+##WDIO Specific sources
+allure-results
+debug
+logs/
+
+##Node modules
+node_modules/
+
+##Environment files
+.env
