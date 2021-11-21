@@ -21,3 +21,40 @@ Then(/^URL should match (.*)$/, async function (expectedURL) {
   let url = await browser.getUrl();
   chai.expect(url).to.equal(expectedURL);
 });
+/**
+ *
+ * WEB INTERACTIONS
+ *
+ */
+
+Given(/^A web page is opened$/, async function () {
+  await browser.url("/inputs"); //it understands the base URL
+  await browser.setTimeout({ implicit: 15000, pageLoad: 10000 }); //it will wait until it reaches 15000 ms when it comes to locate an element
+  //await browser.maximizeWindow(); //maximizing the window
+});
+
+When(/^Perform web interactions$/, async function () {
+  /**
+   * 1. Input Box
+   * Actions:
+   * 1. Type into the box
+   * 2. Clear the field and type or just addValue
+   * 3. Click and type
+   * 4. Slowly typing like a normal user
+   */
+  // let num = 12345;
+  // let strNum = num.toString();
+  // let searchInput = await $('input[type="number"]');
+  // searchInput.click();
+  // for (let i = 0; i < strNum.length; i++) {
+  //   let charStr = strNum.charAt(i);
+  //   await browser.pause(1000);
+  //   await browser.keys(charStr); // gets the char your passing to and press the corresponding Key
+  // }
+  /**
+   *Dropdown
+   *
+   *
+   *
+   */
+});
