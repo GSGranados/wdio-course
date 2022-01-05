@@ -1,0 +1,123 @@
+{
+  "gherkinDocument": {
+    "feature": {
+      "tags": [],
+      "location": { "line": 1, "column": 1 },
+      "language": "en",
+      "keyword": "Feature",
+      "name": "Inventory Feature",
+      "description": "",
+      "children": [
+        {
+          "scenario": {
+            "id": "7",
+            "tags": [
+              {
+                "location": { "line": 2, "column": 5 },
+                "name": "@demo",
+                "id": "6"
+              }
+            ],
+            "location": { "line": 3, "column": 5 },
+            "keyword": "Scenario Outline",
+            "name": "<TestID>: Demo Inventory App.",
+            "description": "",
+            "steps": [
+              {
+                "id": "0",
+                "location": { "line": 5, "column": 9 },
+                "keyword": "Given ",
+                "text": "As a standard user I login to inventory web app"
+              },
+              {
+                "id": "1",
+                "location": { "line": 6, "column": 9 },
+                "keyword": "Then ",
+                "text": "Inventory page should list <NumberOfProducts>"
+              },
+              {
+                "id": "2",
+                "location": { "line": 7, "column": 9 },
+                "keyword": "Then ",
+                "text": "Validate all products have valid price"
+              }
+            ],
+            "examples": [
+              {
+                "id": "5",
+                "tags": [],
+                "location": { "line": 10, "column": 9 },
+                "keyword": "Examples",
+                "name": "",
+                "description": "",
+                "tableHeader": {
+                  "id": "3",
+                  "location": { "line": 11, "column": 13 },
+                  "cells": [
+                    {
+                      "location": { "line": 11, "column": 15 },
+                      "value": "TestID"
+                    },
+                    {
+                      "location": { "line": 11, "column": 27 },
+                      "value": "NumberOfProducts"
+                    }
+                  ]
+                },
+                "tableBody": [
+                  {
+                    "id": "4",
+                    "location": { "line": 12, "column": 13 },
+                    "cells": [
+                      {
+                        "location": { "line": 12, "column": 15 },
+                        "value": "INV_TC001"
+                      },
+                      { "location": { "line": 12, "column": 27 }, "value": "6" }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "comments": [
+      {
+        "location": { "line": 4, "column": 1 },
+        "text": "        # Given Login into inventory web app"
+      }
+    ],
+    "uri": "C:\\Users\\steve\\Documents\\workspace\\WDIO-course\\test\\features\\inventory\\Inventory.feature"
+  },
+  "pickle": {
+    "id": "11",
+    "uri": "C:\\Users\\steve\\Documents\\workspace\\WDIO-course\\test\\features\\inventory\\Inventory.feature",
+    "astNodeIds": ["7", "4"],
+    "name": "INV_TC001: Demo Inventory App.",
+    "language": "en",
+    "steps": [
+      {
+        "id": "8",
+        "text": "As a standard user I login to inventory web app",
+        "astNodeIds": ["0", "4"],
+        "keyword": "Given "
+      },
+      {
+        "id": "9",
+        "text": "Inventory page should list 6",
+        "astNodeIds": ["1", "4"],
+        "keyword": "Then "
+      },
+      {
+        "id": "10",
+        "text": "Validate all products have valid price",
+        "astNodeIds": ["2", "4"],
+        "keyword": "Then "
+      }
+    ],
+    "tags": [{ "name": "@demo", "astNodeId": "6" }]
+  },
+  "testCaseStartedId": "33"
+}
