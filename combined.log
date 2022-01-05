@@ -1,0 +1,101 @@
+{"level":"info","message":"INV_TC001: Started to login sauce demo app...","service":"user-service"}
+{"level":"info","message":"INV_TC001: Started to login sauce demo app...","service":"user-service"}
+{"level":"info","message":"INV_TC001: Started to login sauce demo app...","service":"user-service"}
+{"level":"info","message":"INV_TC001: Started to login sauce demo app...","service":"user-service"}
+{"level":"info","message":"INV_TC001: Started to login sauce demo app...","service":"user-service"}
+{"level":"info","message":"INV_TC001: Started to login sauce demo app...","service":"user-service"}
+{"level":"info","message":"INV_TC001: Started to login sauce demo app...","service":"user-service"}
+{"level":"info","message":"INV_TC001: Started to login sauce demo app...","service":"user-service"}
+{"level":"info","message":"INV_TC001: Started to login sauce demo app...","service":"user-service"}
+{"level":"error","message":"Invalid Number Provided:, ","service":"user-service"}
+{"level":"info","message":"[INV_TC001]: Login to sauce demo","service":"user-service"}
+{"level":"info","message":"[INV_TC001]: Login to sauce demo","service":"user-service"}
+{"level":"info","message":"[INV_TC001]: Username: standard_user entered successfully","service":"user-service"}
+{"level":"info","message":"[INV_TC001]: Password entered successfully","service":"user-service"}
+{"level":"info","message":"[INV_TC001]: Login Button clicked successfully","service":"user-service"}
+{"level":"info","message":"[INV_TC001]: Login to sauce demo","service":"user-service"}
+{"level":"info","message":"[INV_TC001]: Username: standard_user entered successfully","service":"user-service"}
+{"level":"info","message":"[INV_TC001]: Password entered successfully","service":"user-service"}
+{"level":"info","message":"[INV_TC001]: Login Button clicked successfully","service":"user-service"}
+{"level":"info","message":"[E2E_TC001]: Getting the payload data for endpoint: users","service":"user-service"}
+{"level":"info","message":"[E2E_TC001]: Making a GET to /api/users","service":"user-service"}
+{"level":"info","message":"[E2E_TC001]: Getting the payload data for endpoint: users","service":"user-service"}
+{"level":"info","message":"[E2E_TC001]: Making a GET to /api/users","service":"user-service"}
+{"level":"info","message":"[E2E_TC001]: Getting the payload data for endpoint: users","service":"user-service"}
+{"level":"info","message":"[E2E_TC001]: Making a GET to /api/users","service":"user-service"}
+{"level":"info","message":"[E2E_TC001]: Getting the payload data for endpoint: users","service":"user-service"}
+{"level":"info","message":"[E2E_TC001]: Making a GET to /api/users","service":"user-service"}
+{"level":"info","message":"[E2E_TC001]: Getting the payload data for endpoint: users","service":"user-service"}
+{"level":"info","message":"[E2E_TC001]: Making a GET to /api/users","service":"user-service"}
+{"level":"info","message":"[E2E_TC001]: Getting the payload data for endpoint: users","service":"user-service"}
+{"level":"info","message":"[E2E_TC001]: Making a GET to /api/users","service":"user-service"}
+{"level":"info","message":"[E2E_TC001]: API response from /api/users stored in JSON file","service":"user-service"}
+{"level":"info","message":"[E2E_TC001]: Getting the payload data for endpoint: users","service":"user-service"}
+{"level":"info","message":"[E2E_TC001]: Making a GET to /api/users","service":"user-service"}
+{"level":"info","message":"[E2E_TC001]: API response from /api/users stored in JSON file","service":"user-service"}
+{"level":"info","message":"[E2E_TC001]: Login to nopCommerce demo site...","service":"user-service"}
+{"level":"info","message":"[E2E_TC001]: Login to: https://admin-demo.nopcommerce.com/login with admin@yourstore.com","service":"user-service"}
+{"level":"info","message":"[E2E_TC001]: Username: admin@yourstore.com entered successfully","service":"user-service"}
+{"level":"info","message":"[E2E_TC001]: Password entered successfully","service":"user-service"}
+{"level":"info","message":"[E2E_TC001]: Getting the payload data for endpoint: users","service":"user-service"}
+{"level":"info","message":"[E2E_TC001]: Making a GET to /api/users","service":"user-service"}
+{"level":"info","message":"[E2E_TC001]: API response from /api/users stored in JSON file","service":"user-service"}
+{"level":"info","message":"[E2E_TC001]: Login to nopCommerce demo site...","service":"user-service"}
+{"level":"info","message":"[E2E_TC001]: Login to: https://admin-demo.nopcommerce.com/login with admin@yourstore.com","service":"user-service"}
+{"level":"info","message":"[E2E_TC001]: Username: admin@yourstore.com entered successfully","service":"user-service"}
+{"level":"info","message":"[E2E_TC001]: Password entered successfully","service":"user-service"}
+{"level":"info","message":"[E2E_TC001]: Login Button clicked successfully","service":"user-service"}
+{"level":"info","message":"[E2E_TC001]: Getting the payload data for endpoint: users","service":"user-service"}
+{"level":"info","message":"[E2E_TC001]: Making a GET to /api/users","service":"user-service"}
+{"level":"info","message":"[E2E_TC001]: API response from /api/users stored in JSON file","service":"user-service"}
+{"level":"info","message":"[E2E_TC001]: Login to nopCommerce demo site...","service":"user-service"}
+{"level":"info","message":"[E2E_TC001]: Login to: https://admin-demo.nopcommerce.com with admin@yourstore.com","service":"user-service"}
+{"level":"info","message":"[E2E_TC001]: Username: admin@yourstore.com entered successfully","service":"user-service"}
+{"level":"info","message":"[E2E_TC001]: Password entered successfully","service":"user-service"}
+{"level":"info","message":"[E2E_TC001]: Login Button clicked successfully","service":"user-service"}
+{"level":"info","message":"[E2E_TC001]: Navigating to the customer list screen...","service":"user-service"}
+{"level":"info","message":"[E2E_TC001]: Getting the payload data for endpoint: users","service":"user-service"}
+{"level":"info","message":"[E2E_TC001]: Making a GET to /api/users","service":"user-service"}
+{"level":"info","message":"[E2E_TC001]: API response from /api/users stored in JSON file","service":"user-service"}
+{"level":"info","message":"[E2E_TC001]: Login to nopCommerce demo site...","service":"user-service"}
+{"level":"info","message":"[E2E_TC001]: Login to: https://admin-demo.nopcommerce.com with admin@yourstore.com","service":"user-service"}
+{"level":"info","message":"[E2E_TC001]: Username: admin@yourstore.com entered successfully","service":"user-service"}
+{"level":"info","message":"[E2E_TC001]: Password entered successfully","service":"user-service"}
+{"level":"info","message":"[E2E_TC001]: Login Button clicked successfully","service":"user-service"}
+{"level":"info","message":"[E2E_TC001]: Navigating to the customer list screen...","service":"user-service"}
+{"level":"info","message":"[E2E_TC001]: Searching user: George Bluth","service":"user-service"}
+{"level":"info","message":"[E2E_TC001]: Searching user: Janet Weaver","service":"user-service"}
+{"level":"info","message":"[E2E_TC001]: Searching user: Emma Wong","service":"user-service"}
+{"level":"info","message":"[E2E_TC001]: Searching user: Eve Holt","service":"user-service"}
+{"level":"info","message":"[E2E_TC001]: Searching user: Charles Morris","service":"user-service"}
+{"level":"info","message":"[E2E_TC001]: Searching user: Tracey Ramos","service":"user-service"}
+{"level":"info","message":"[E2E_TC001]: Getting the payload data for endpoint: users","service":"user-service"}
+{"level":"info","message":"[E2E_TC001]: Making a GET to /api/users","service":"user-service"}
+{"level":"info","message":"[E2E_TC001]: API response from /api/users stored in JSON file","service":"user-service"}
+{"level":"info","message":"[E2E_TC001]: Login to nopCommerce demo site...","service":"user-service"}
+{"level":"info","message":"[E2E_TC001]: Login to: https://admin-demo.nopcommerce.com with admin@yourstore.com","service":"user-service"}
+{"level":"info","message":"[E2E_TC001]: Username: admin@yourstore.com entered successfully","service":"user-service"}
+{"level":"info","message":"[E2E_TC001]: Password entered successfully","service":"user-service"}
+{"level":"info","message":"[E2E_TC001]: Login Button clicked successfully","service":"user-service"}
+{"level":"info","message":"[E2E_TC001]: Navigating to the customer list screen...","service":"user-service"}
+{"level":"info","message":"[E2E_TC001]: Searching user: George Bluth","service":"user-service"}
+{"level":"info","message":"[E2E_TC001]: Searching user: Janet Weaver","service":"user-service"}
+{"level":"info","message":"[E2E_TC001]: Searching user: Emma Wong","service":"user-service"}
+{"level":"info","message":"[E2E_TC001]: Searching user: Eve Holt","service":"user-service"}
+{"level":"info","message":"[E2E_TC001]: Searching user: Charles Morris","service":"user-service"}
+{"level":"info","message":"[E2E_TC001]: Searching user: Tracey Ramos","service":"user-service"}
+{"level":"info","message":"[E2E_TC001]: Getting the payload data for endpoint: users","service":"user-service"}
+{"level":"info","message":"[E2E_TC001]: Making a GET to /api/users","service":"user-service"}
+{"level":"info","message":"[E2E_TC001]: API response from /api/users stored in JSON file","service":"user-service"}
+{"level":"info","message":"[E2E_TC001]: Login to nopCommerce demo site...","service":"user-service"}
+{"level":"info","message":"[E2E_TC001]: Login to: https://admin-demo.nopcommerce.com with admin@yourstore.com","service":"user-service"}
+{"level":"info","message":"[E2E_TC001]: Username: admin@yourstore.com entered successfully","service":"user-service"}
+{"level":"info","message":"[E2E_TC001]: Password entered successfully","service":"user-service"}
+{"level":"info","message":"[E2E_TC001]: Login Button clicked successfully","service":"user-service"}
+{"level":"info","message":"[E2E_TC001]: Navigating to the customer list screen...","service":"user-service"}
+{"level":"info","message":"[E2E_TC001]: Searching user: George Bluth","service":"user-service"}
+{"level":"info","message":"[E2E_TC001]: Searching user: Janet Weaver","service":"user-service"}
+{"level":"info","message":"[E2E_TC001]: Searching user: Emma Wong","service":"user-service"}
+{"level":"info","message":"[E2E_TC001]: Searching user: Eve Holt","service":"user-service"}
+{"level":"info","message":"[E2E_TC001]: Searching user: Charles Morris","service":"user-service"}
+{"level":"info","message":"[E2E_TC001]: Searching user: Tracey Ramos","service":"user-service"}

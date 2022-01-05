@@ -1,0 +1,32 @@
+
+> wdio-course@1.0.0 test:demo C:\Users\steve\Documents\workspace\WDIO-course
+> set DEBUG=N && set HEADLESS=N && npx wdio config/wdio.test.conf.ts --cucumberOpts.tagExpression='@demo'
+
+
+Execution of 4 workers started at 2021-12-14T04:50:47.779Z
+
+[0-3] RUNNING in chrome - C:\Users\steve\Documents\workspace\WDIO-course\test\features\inventory\Inventory.feature
+[0-3] info: INV_TC001: Started to login sauce demo app... {"service":"user-service"}
+[0-3] Given step test ID:INV_TC001
+[0-3] Given step test ID:INV_TC001
+[0-3] >>>>> the appid is:, ABC123
+[0-3] [ 29.99, 9.99, 15.99, 49.99, 7.99, 15.99 ]
+[0-3] PASSED in chrome - C:\Users\steve\Documents\workspace\WDIO-course\test\features\inventory\Inventory.feature
+
+ "spec" Reporter:
+------------------------------------------------------------------
+[chrome 96.0.4664.93 windows #0-3] Running: chrome (v96.0.4664.93) on windows
+[chrome 96.0.4664.93 windows #0-3] Session ID: aecefffa6556d5f99093d8d1d8cb1299
+[chrome 96.0.4664.93 windows #0-3]
+[chrome 96.0.4664.93 windows #0-3] » \test\features\inventory\Inventory.feature
+[chrome 96.0.4664.93 windows #0-3] Inventory Feature
+[chrome 96.0.4664.93 windows #0-3] INV_TC001: Demo Inventory App.
+[chrome 96.0.4664.93 windows #0-3]    [32m✓[39m Given As a standard user I login to inventory web app
+[chrome 96.0.4664.93 windows #0-3]    [32m✓[39m Then Inventory page should list 6
+[chrome 96.0.4664.93 windows #0-3]    [32m✓[39m Then Validate all products have valid price
+[chrome 96.0.4664.93 windows #0-3]
+[chrome 96.0.4664.93 windows #0-3] [32m3 passing (6.5s)[39m
+
+
+Spec Files:	 1 passed, 3 skipped, 4 total (100% completed) in 00:00:09 
+

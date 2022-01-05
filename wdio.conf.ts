@@ -1,9 +1,15 @@
+//@ts-nocheck
+import dotenv from "dotenv";
+import allure from "@wdio/allure-reporter";
+import fs from "fs";
+dotenv.config();
 let headless: string = process.env.HEADLESS;
+let debug = process.env.DEBUG;
 export const config: WebdriverIO.Config = {
   //
   // ====================
   // Runner Configuration
-  // ====================
+  // ================= ===
   //
   //
   // ==================
@@ -21,6 +27,7 @@ export const config: WebdriverIO.Config = {
   // then the current working directory is where your `package.json` resides, so `wdio`
   // will be called from there.
   //
+  currentNewDt: new Date(),
   specs: ["./test/features/**/*.feature"],
   // Patterns to exclude.
   exclude: [
@@ -53,7 +60,7 @@ export const config: WebdriverIO.Config = {
       // maxInstances can get overwritten per capability. So if you have an in-house Selenium
       // grid with only 5 firefox instances available you can make sure that not more than
       // 5 instances get started at a time.
-      maxInstances: 5,
+      maxInstances: 5, //maximum instances can be spanned up is FIVE
       //
       browserName: "chrome",
       "goog:chromeOptions": {
@@ -74,6 +81,12 @@ export const config: WebdriverIO.Config = {
       // excludeDriverLogs: ['*'], // pass '*' to exclude all driver session logs
       // excludeDriverLogs: ['bugreport', 'server'],
     },
+    // {
+    //   maxInstances: 5,
+    //   browserName: "firefox",
+    //   acceptInsecureCerts: true,
+    //   timeouts: { implicit: 15000, pageLoad: 20000, script: 30000 },
+    // },
   ],
   //
   // ===================
@@ -82,7 +95,7 @@ export const config: WebdriverIO.Config = {
   // Define all options that are relevant for the WebdriverIO instance here
   //
   // Level of logging verbosity: trace | debug | info | warn | error | silent
-  logLevel: "info",
+  logLevel: debug.toUpperCase() === "Y" ? "info" : "error",
   //
   // Set specific log levels per logger
   // loggers:
@@ -144,10 +157,21 @@ export const config: WebdriverIO.Config = {
   // Test reporter for stdout.
   // The only one supported by default is 'dot'
   // see also: https://webdriver.io/docs/dot-reporter
-  reporters: ["spec", ["allure", { outputDir: "allure-results" }]],
+  reporters: [
+    "spec",
+    [
+      "allure",
+      {
+        outputDir: "allure-results",
+        disableWebDriverStepsReporting: true,
+        useCucumberStepReporter: true,
+      },
+    ],
+  ],
 
   //
   // If you are using Cucumber you need to specify the location of your step definitions.
+  //@ts-ignore
   cucumberOpts: {
     // <string[]> (file/dir) require files before executing features
     require: ["./test/features/step-definitions/*.ts"],
@@ -190,8 +214,11 @@ export const config: WebdriverIO.Config = {
    * @param {Object} config wdio configuration object
    * @param {Array.<Object>} capabilities list of capabilities details
    */
-  // onPrepare: function (config, capabilities) {
-  // },
+  onPrepare: function (config, capabilities) {
+    if (process.env.RUNNER === "LOCAL" && fs.existsSync("./allure-results")) {
+      fs.rmdirSync("./allure-results", { recursive: true });
+    }
+  },
   /**
    * Gets executed before a worker process is spawned and can be used to initialise specific service
    * for that worker as well as modify runtime environments in an async fashion.
@@ -244,8 +271,17 @@ export const config: WebdriverIO.Config = {
    * @param {ITestCaseHookParameter} world    world object containing information on pickle and test step
    * @param {Object}                 context  Cucumber World object
    */
-  // beforeScenario: function (world, context) {
-  // },
+  beforeScenario: function (world, context) {
+    let arr = world.pickle.name.split(/:/);
+    //@ts-ignore
+    if (arr.length > 0) browser.config.testid = arr[0];
+    //@ts-ignore
+    if (!browser.config.testid)
+      throw Error(
+        `Error getting the test ID for the current scenario>>>
+        ${world.pickle.name}`
+      );
+  },
   /**
    *
    * Runs before a Cucumber Step.
@@ -266,8 +302,11 @@ export const config: WebdriverIO.Config = {
    * @param {number}             result.duration  duration of scenario in milliseconds
    * @param {Object}             context          Cucumber World object
    */
-  // afterStep: function (step, scenario, result, context) {
-  // },
+  afterStep: async function (step, scenario, result, context) {
+    if (!result.passed) {
+      await browser.takeScreenshot();
+    }
+  },
   /**
    *
    * Runs after a Cucumber Scenario.
@@ -286,8 +325,10 @@ export const config: WebdriverIO.Config = {
    * @param {String}                   uri      path to feature file
    * @param {GherkinDocument.IFeature} feature  Cucumber feature object
    */
-  // afterFeature: function (uri, feature) {
-  // },
+  afterFeature: function (uri, feature) {
+    allure.addEnvironment("Environment", browser.config.environment);
+    allure.addEnvironment("Middleware:", "SIT-EAI");
+  },
 
   /**
    * Runs after a WebdriverIO command gets executed
