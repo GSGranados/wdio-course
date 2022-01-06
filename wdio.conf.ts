@@ -3,7 +3,6 @@ import dotenv from "dotenv";
 import allure from "@wdio/allure-reporter";
 import fs from "fs";
 dotenv.config();
-let debug = process.env.DEBUG;
 export const config: WebdriverIO.Config = {
   //
   // ====================
@@ -91,7 +90,7 @@ export const config: WebdriverIO.Config = {
   // Define all options that are relevant for the WebdriverIO instance here
   //
   // Level of logging verbosity: trace | debug | info | warn | error | silent
-  logLevel: debug.toUpperCase() === "Y" ? "info" : "error",
+  logLevel: "info",
   //
   // Set specific log levels per logger
   // loggers:
