@@ -3,7 +3,6 @@ import dotenv from "dotenv";
 import allure from "@wdio/allure-reporter";
 import fs from "fs";
 dotenv.config();
-let headless: string = process.env.HEADLESS;
 let debug = process.env.DEBUG;
 export const config: WebdriverIO.Config = {
   //
@@ -64,15 +63,12 @@ export const config: WebdriverIO.Config = {
       //
       browserName: "chrome",
       "goog:chromeOptions": {
-        args:
-          headless.toUpperCase() === "Y"
-            ? [
-                "--disable-web-security",
-                "--headless",
-                "--disable-dev-shm-usage",
-                "--no-sandbox",
-              ]
-            : [],
+        args: [
+          "--disable-web-security",
+          "--headless",
+          "--disable-dev-shm-usage",
+          "--no-sandbox",
+        ],
       },
       acceptInsecureCerts: true,
       timeouts: { implicit: 15000, pageLoad: 20000, script: 30000 },
