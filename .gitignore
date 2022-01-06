@@ -2,9 +2,9 @@
 allure-results
 debug
 logs/
-
 ##Node modules
 node_modules/
 
+data/api-res/
 ##Environment files
 .env
